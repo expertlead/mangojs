@@ -6,7 +6,7 @@ const superagent = require('superagent');
 
 exports.run_service = async(obj_service) => {
     try {
-        const exec_env = process.env.EXEC_ENV;
+        const exec_env = process.env.EXEC_ENV_API;
         const str_uri = exec_env + obj_service.endpoint;
         let res = null;
         switch (obj_service.method.toLowerCase()) {

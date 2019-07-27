@@ -1,5 +1,5 @@
 {
-  "name": "sparrow_puppeteer",
+  "name": "MangoJS",
   "version": "1.0.0",
   "description": "automation using only puppeteer",
   "main": "index.js",
@@ -7,18 +7,26 @@
     "test": "jest --detectOpenHandles --verbose"
   },
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "testEnvironment": "node"
   },
-  "author": "",
+  "chromeOptions": {
+    "args": [
+      "--DNS-prefetch-disable"
+    ]
+  },
+  "author": "Rahul Singh",
   "license": "ISC",
   "dependencies": {
     "assert": "^1.4.1",
+    "chromedriver": "^75.0.1",
     "dotenv": "^8.0.0",
     "fs": "0.0.1-security",
     "jest": "^24.8.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "nodemon": "^1.19.0",
     "path": "^0.12.7",
-    "puppeteer": "^1.15.0"
+    "selenium-webdriver": "^4.0.0-alpha.4",
+    "superagent": "^5.1.0"
   }
 }
